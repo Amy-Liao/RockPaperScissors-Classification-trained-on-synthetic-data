@@ -6,7 +6,7 @@ In this project, we used rock-paper-scissors dataset (https://www.tensorflow.org
 The original dataset is split into two groups, train and test (We later use test as our validation dataset). The training dataset includes 2520 images, and the testing one includes 372 images. The image size is 300*300 with 3 channels. The number of labels is 3 which are rock, paper, and scissors. Code to explore the dataset is under the “Load and explore the dataset” section.
 
 ## Data preprocess and augmentation
-All images are resized to 200*200*3 and are rescaled among 0 to 1. In order to avoid overfitting on dataset, we randomly flip (both horizontal and vertical), adjust contrast, zoom, and rotate the images in training dataset. Code is under the “data augmentation” section.
+All images are resized to 200 * 200 * 3 and are rescaled among 0 to 1. In order to avoid overfitting on dataset, we randomly flip (both horizontal and vertical), adjust contrast, zoom, and rotate the images in training dataset. Code is under the “data augmentation” section.
 
 ## Model design
 Input shape is 200 * 200 * 3 and the output is the softmax value of 3 groups. The model is consist of 4 layers of Conv2D with some average pooling and 3 layers of connected neuron network at the bottom. Mask size is 3*3. Best validation accuracy achieved 0.90
