@@ -1,6 +1,6 @@
-# RockPaperScissors-Classification
+# RockPaperScissors Classification Trained on Synthetic Dataset
 
-In this project, we used rock-paper-scissors dataset (https://www.tensorflow.org/datasets/catalog/rock_paper_scissors) to classify the hand gestures into rock, paper, and scissors. Code is provided in RockPaperScissor.ipynb
+In this project, we want to see if a model can be trained on a synthetic dataset. We used a CGI based rock-paper-scissors dataset (https://www.tensorflow.org/datasets/catalog/rock_paper_scissors) to classify the hand gestures into rock, paper, and scissors. Code is provided in RockPaperScissor.ipynb
 
 ## Dataset description  
 The original dataset is split into two groups, train and test (We later use test as our validation dataset). The training dataset includes 2520 images, and the testing one includes 372 images. The image size is 300*300 with 3 channels. The number of labels is 3 which are rock, paper, and scissors. Code to explore the dataset is under the “Load and explore the dataset” section.
